@@ -14,6 +14,13 @@
 - If a relevant check cannot be run, state that clearly instead of implying it passed.
 - For review-only requests, report findings without modifying code unless fixes are also requested.
 
+## Commits
+
+- When commits are requested, group changes by logical task or context, not by editing session or shared files. Make a separate commit for each independent concern.
+- Keep related implementation, regression tests, and directly affected documentation together. Independent diagrams or documentation work belong in their own commit; do not split cohesive work into one commit per file.
+- If a file contains changes for multiple concerns, stage the relevant hunks separately. Inspect each staged diff and use a commit message that describes that commit's purpose.
+- This preference applies across projects. It does not authorize committing or pushing without the user's request.
+
 ## Formatting
 
 - Follow the repository's formatter, linter, and `.editorconfig` settings.
