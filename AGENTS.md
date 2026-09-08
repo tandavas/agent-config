@@ -23,11 +23,11 @@
 ## Readability and refactoring
 
 - Use a named boolean when an inline condition obscures intent through arithmetic, multiple operators, or nested logic. Prefer positive, intent-based names.
-- When duplicated logic is central to a review or change, use `$refactor-duplicated-logic`. Prefer extraction only when it improves clarity, maintainability, testability, or drift risk.
+- When duplicated logic is central to a review or change, use `$refactor-duplicated-logic`. Prefer extraction only when it improves clarity, maintainability, or testability, or reduces drift risk.
 
 ## Communication
 
 - Lead with the outcome or actionable findings. For reviews, order findings by severity and include precise file and line references.
-- Explain changes file-by-file and function-by-function, covering only changed or relevant lines. Prefer a diff-oriented explanation and omit unchanged boilerplate.
+- For requested walkthroughs, explain changes file-by-file and function-by-function, covering only changed or relevant lines. Otherwise, keep completion summaries concise. Omit unchanged boilerplate.
 - Explain why a suggestion helps and identify material trade-offs.
-- Label subjective suggestions as **preference** and correctness, safety, or established-rule issues as **requirement**.
+- Label subjective suggestions as **preference**. Reserve **requirement** for demonstrated correctness or safety issues and explicit project rules; distinguish a required fix from an optional refactoring approach.

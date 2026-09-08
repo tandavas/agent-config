@@ -1,6 +1,6 @@
 # Personal Agent Configuration
 
-Personal coding preferences and reusable skills, independent of any project.
+My evolving Codex preferences and reusable skills, independent of any project. Adopt what fits your workflow.
 
 ## Contents
 
@@ -12,7 +12,13 @@ Personal coding preferences and reusable skills, independent of any project.
 
 Copy `AGENTS.md` into your Codex home directory (normally `~/.codex/AGENTS.md`). Merge with any existing instructions before replacing them.
 
-Install `skills/refactor-duplicated-logic` with Codex's skill installer, or copy the folder into the personal skills location supported by your Codex installation. The current Mac installation uses `~/.codex/skills/`.
+Ask Codex to install the skill from this repository:
+
+```text
+Use $skill-installer to install skills/refactor-duplicated-logic from tandavas/agent-config.
+```
+
+The installer places the skill in your personal Codex skills directory so it can be used across projects. Private repositories require GitHub access.
 
 Start a new task to load updated global instructions. The skill can be selected automatically for relevant work or explicitly invoked with `$refactor-duplicated-logic`.
 

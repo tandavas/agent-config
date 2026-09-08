@@ -19,7 +19,7 @@ Name helpers by intent and place them near their primary caller unless they are 
 
 ## Decide whether to extract
 
-Use the **Rule of Three** as a heuristic: two occurrences can be acceptable; refactor on the third. Refactor earlier when the duplicated block is non-trivial and divergence would create a realistic defect risk.
+Use the **Rule of Three** as a heuristic: two occurrences can be acceptable; consider extraction on the third. Consider extraction earlier when the duplicated block is non-trivial and divergence would create a realistic defect risk.
 
 Avoid extraction when it introduces:
 
@@ -28,4 +28,4 @@ Avoid extraction when it introduces:
 - **One-off Helpers**: a single-use helper that does not clarify a complex operation.
 - **Clarity Loss**: readers must jump between scopes or files to follow a small linear flow.
 
-During review, label subjective extraction suggestions as **preference** and correctness or material drift risks as **requirement**. Name the applicable technique or the smell being avoided so the trade-off is explicit.
+During review, label extraction suggestions as **preference** unless extraction is necessary to resolve a demonstrated correctness or safety issue or satisfy an explicit project rule. Potential drift alone does not make extraction a **requirement**. Distinguish a required behavior fix from an optional extraction. Name the applicable technique or the smell being avoided so the trade-off is explicit.
