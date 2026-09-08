@@ -1,0 +1,3 @@
+interface:
+  display_name: "Refactor Duplicated Logic"
+  short_description: "Decide when and how to extract duplicated logic"
